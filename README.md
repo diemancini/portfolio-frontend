@@ -69,6 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-## HOSTING THIS APP IN GITHUB PAGES
+## Hosting this app in Github Pages
 
-You can learn more in the [Deploying a React App\* to GitHub Pages](https://github.com/gitname/react-gh-pages)
+How to host this app in Github Pages here [Deploying a React App\* to GitHub Pages](https://github.com/gitname/react-gh-pages)
+How to create a custom domain here: [Create a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
