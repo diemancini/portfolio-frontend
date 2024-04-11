@@ -1,7 +1,8 @@
 import LoadingIndicator from "../UI/LoadingIndicator.jsx";
 import ErrorBlock from "../UI/ErrorBlock.jsx";
 import { getUrl, useHttp } from "../../hooks/http.js";
-import PgaTable from "../UI/PgaTable.jsx";
+//import PgaTable from "../UI/PgaTable.jsx";
+import PgaTableSection from "../UI/PgaTableSection.jsx";
 
 const requestConfig = {};
 
@@ -37,7 +38,7 @@ export default function Pga() {
   }
 
   if (data !== undefined && data.data !== undefined) {
-    content = <PgaTable data={data} />;
+    content = <PgaTableSection data={data} />;
   }
 
   return (

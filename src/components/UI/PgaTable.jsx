@@ -10,7 +10,7 @@ export default function PgaTable({ data }) {
           </tr>
           {data.data.map((values) => {
             return (
-              <tr key={values[0]}>
+              <tr key={values[0]} className='grid-1-5'>
                 {values.map((value, key) => {
                   return <td key={data.columns[key] + values[0]}>{value}</td>;
                 })}
