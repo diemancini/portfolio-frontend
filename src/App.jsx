@@ -12,7 +12,7 @@ import "./App.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio-frontend",
     element: <Navigate to='/golf' />,
   },
   {
