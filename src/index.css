@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ficon:hover {
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
+}
+
+/* .item-gradient {
+  @apply absolute top-0 bottom-0 right-0 left-0 
+  bg-gradient-to-b from-transparent to-gray-900
+  group-hover:from-gray-50 group-hover:to-white
+  group-hover:opacity-70;
+} */

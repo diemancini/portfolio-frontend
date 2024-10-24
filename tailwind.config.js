@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -18,10 +19,11 @@ export default {
         opensans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "logo-dark-mode": "url('../images/logo-dark-mode.svg')",
-        "logo-light-mode": "url('../images/logo-light-mode.svg')",
+        "computer-light-mode": "url('../images/computer-light-mode.svg')",
+        "computer-dark-mode": "url('../images/computer-dark-mode.svg')",
         "curvy-dark-mode": "url('../images/bg-curvy-dark-mode.svg')",
         "curvy-light-mode": "url('../images/bg-curvy-light-mode.svg')",
+        "button-light-mode": "url('../images/bg-curvy-light-mode.svg')",
       }),
     },
   },
