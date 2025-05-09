@@ -17,11 +17,11 @@ function Footer() {
           <div className='flex pb-10 space-x-3'>
             <SocialIcon
               url='https://www.linkedin.com/in/diego-martin-mancini/'
-              img='/assets/images/linkedin-icon.svg'
+              img='/portfolio-frontend/assets/images/linkedin-icon.svg'
             />
             <SocialIcon
               url='https://www.linkedin.com/in/diego-martin-mancini/'
-              img='/assets/images/linkedin-icon.svg'
+              img='/portfolio-frontend/assets/images/linkedin-icon.svg'
             />
           </div>
         </div>

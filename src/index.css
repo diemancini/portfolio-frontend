@@ -25,9 +25,8 @@
   :root {
     --svg-background-computer-light-mode: url("/assets/images/computer-light-mode.svg");
     --svg-background-computer-dark-mode: url("/assets/images/computer-dark-mode.svg");
-    --svg-background-curvy-light-mode: url("/assets/images/curvy-light-mode.svg");
-    --svg-background-curvy-dark-mode: url("/assets/images/curvy-dark-mode.svg");
     --svg-background-button-light-mode: url("/assets/images/button-light-mode.svg");
+    --svg-background-button-dark-mode: url("/assets/images/button-dark-mode.svg");
   }
 }
 /* .item-gradient {
