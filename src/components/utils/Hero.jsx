@@ -9,17 +9,21 @@ function Hero() {
         text-gray-900 md:flex-row md:px-0'
       >
         {/* Image  */}
-        <img className='' src='images/desktop/programming.jpg' alt='' />
+        <img
+          className=''
+          src='portfolio-frontend/assets/images/programming.jpg'
+          alt=''
+        />
 
         {/* Tet Container */}
         <div
-          className='group top-48 pr-0 bg-white dark:bg-darkBlue1 dark:text-white
+          className='group top-48 pr-0 bg-white dark:bg-dark-blue-1 dark:text-white
           md:absolute md:right-0 md:py-20 md:pl-20 duration-200 md:block hover:scale-110
           hover:shadow-2xl hover:shadow-[#65e2d9]'
         >
           <h2
             className='max-w-lg mt-10 mb-6 font-sans text-4xl text-center
-          dark:bg-darkBlue1 dark:text-white text-gray-900 uppercase
+          dark:bg-dark-blue-1 dark:text-white text-gray-900 uppercase
             md:text-5lx md:mt-0 md:text-left'
           >
             WHO I AM
@@ -49,7 +53,7 @@ function Hero() {
               <div className='flex items-center md:mr-10'>
                 <SocialIcon
                   url='https://www.linkedin.com/in/diego-martin-mancini/'
-                  img='images/linkedin-icon.svg'
+                  img='portfolio-frontend/assets/images/linkedin-icon.svg'
                 />
               </div>
             </div>

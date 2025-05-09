@@ -1,12 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@config "../tailwind.config.js";
 
 .ficon:hover {
   filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
     brightness(105%) contrast(104%);
 }
+@theme {
+  --color-dark-blue-0: hsl(218, 28%, 13%);
+  --color-dark-blue-1: hsl(218, 28%, 13%);
+  --color-dark-blue-2: hsl(216, 53%, 9%);
+  --color-dark-blue-3: hsl(219, 30%, 18%);
+  --color-accentCyan: hsl(176, 68%, 64%);
+  --color-accentBlue: hsl(198, 60%, 50%);
+  --color-lightRed: hsl(0, 100%, 63%);
 
+  --font-sans: Raleway, sans-serif;
+  --font-opensans: Open Sans, sans-serif;
+}
+/* For loading the svg image as background. These configuration still are dependents on 'tailwind.config.js' file */
+@layer base {
+  :root {
+    --svg-background-computer-light-mode: url("/assets/images/computer-light-mode.svg");
+    --svg-background-computer-dark-mode: url("/assets/images/computer-dark-mode.svg");
+    --svg-background-curvy-light-mode: url("/assets/images/curvy-light-mode.svg");
+    --svg-background-curvy-dark-mode: url("/assets/images/curvy-dark-mode.svg");
+    --svg-background-button-light-mode: url("/assets/images/button-light-mode.svg");
+  }
+}
 /* .item-gradient {
   @apply absolute top-0 bottom-0 right-0 left-0 
   bg-gradient-to-b from-transparent to-gray-900

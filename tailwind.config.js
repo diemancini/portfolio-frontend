@@ -1,35 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
+  content: [],
   theme: {
     extend: {
-      colors: {
-        darkBlue: "hsl(217, 28%, 15%)",
-        darkBlue1: "hsl(218, 28%, 13%)",
-        darkBlue2: "hsl(216, 53%, 9%)",
-        darkBlue3: "hsl(219, 30%, 18%)",
-        accentCyan: "hsl(176, 68%, 64%)",
-        accentBlue: "hsl(198, 60%, 50%)",
-        lightRed: "hsl(0, 100%, 63%)",
+      backgroundImage: {
+        "computer-light-mode-svg": "var(--svg-background-computer-light-mode)",
+        "computer-dark-mode-svg": "var(--svg-background-computer-dark-mode)",
+        "computer-curvy-light-mode-svg":
+          "var(--svg-background-computer-curvy-light-mode)",
+        "computer-urvy-dark-mode-svg":
+          "var(--svg-background-computer-urvy-dark-mode)",
+        "button-light-mode-svg": "var(--svg-background-button-light-mode)",
       },
-      fontFamily: {
-        sans: ["Raleway", "sans-serif"],
-        opensans: ["Open Sans", "sans-serif"],
-      },
-      backgroundImage: (theme) => ({
-        "computer-light-mode": "url('../images/computer-light-mode.svg')",
-        "computer-dark-mode": "url('../images/computer-dark-mode.svg')",
-        "curvy-dark-mode": "url('../images/bg-curvy-dark-mode.svg')",
-        "curvy-light-mode": "url('../images/bg-curvy-light-mode.svg')",
-        "button-light-mode": "url('../images/bg-curvy-light-mode.svg')",
-      }),
-    },
-  },
-  variants: {
-    extend: {
-      backgroundImage: ["dark"],
     },
   },
   plugins: [],

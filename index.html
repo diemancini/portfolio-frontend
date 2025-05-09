@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,23 +15,19 @@
 
   <script>
     // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
-    if (
-      localStorage.getItem('color-theme') === 'dark' ||
-      (!('color-theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
+    document.documentElement.classList.toggle(
+      "dark",
+      localStorage.theme === "dark" ||
+      (("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+    );
   </script>
-  <!-- <script src="js/scripts.js" defer></script> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/output.css" rel="stylesheet">
   <title>React Project Manager</title>
 </head>
 
-<body class="dark:bg-darkBlue dark:text-white font-opensans">
+<body class="dark:bg-dark-blue-0 dark:text-white font-opensans">
   <div id="modal-root"></div>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>

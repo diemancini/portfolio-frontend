@@ -2,13 +2,13 @@ import Card from "./Card";
 
 function Features() {
   return (
-    <section id='features' className='pt-12 bg-gray-50 dark:bg-darkBlue1'>
+    <section id='features' className='pt-12 bg-gray-50 dark:bg-dark-blue-1'>
       {/* Features Container */}
       <div className='container mx-auto px-6 pb-32'>
         {/* First Row */}
         <div className='flex flex-col space-y-24 text-center md:flex-row md:space-y-0'>
           <Card
-            imageUrl='images/software-engineering-icon.svg'
+            imageUrl='portfolio-frontend/assets/images/software-engineering-icon.svg'
             title='Building and Maintenance Backend Systems'
             description="From years (15 years), I've worked on several types of systems 
             (Marketing Automation, Ecommerce, Warehouse Management, etc), using the most
@@ -16,7 +16,7 @@ function Features() {
             (Python, C++ and Javascript) known at the market."
           />
           <Card
-            imageUrl='images/database-icon.svg'
+            imageUrl='portfolio-frontend/assets/images/database-icon.svg'
             title='Deal with Databases'
             description="It's higlly mandatory to have experience on database when it comes software at the market.
             Furthermore, I love to analyse and manipulate data with relationship tables and create efficient queries. 
@@ -27,7 +27,7 @@ function Features() {
         {/* Second Row */}
         <div className='flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0'>
           <Card
-            imageUrl='images/data-processing-icon.svg'
+            imageUrl='portfolio-frontend/assets/images/data-processing-icon.svg'
             title='Manipulating Unstructure data'
             description='Several times I was tasked with understanding and solve the problem for each client, analysing 
             unstructured and structured data in order to organize and clean them. To achieve that, I used powerful
@@ -36,7 +36,7 @@ function Features() {
             '
           />
           <Card
-            imageUrl='images/frontend-source-code-icon.svg'
+            imageUrl='portfolio-frontend/assets/images/frontend-source-code-icon.svg'
             title='Experience with Frontend Development Insights'
             description='Web system is mandatory for companies show your product to your clients. For backend developers 
             is crucial to have some knowledge in frontend, specially Javascript (Vannila and/or Typescript) and frameworks 

@@ -2,7 +2,7 @@ import SocialIcon from "./SocialIcon";
 
 function Footer() {
   return (
-    <footer className='bg-darkBlue2 text-white'>
+    <footer className='bg-dark-blue-2 text-white'>
       <div className='container mx-auto px-5 pt-12 pb-10'>
         {/* Flex Container For All Items */}
         <div className='flex flex-col justify-between space-y-24 md:flex-row md:space-y-0'>
@@ -17,11 +17,11 @@ function Footer() {
           <div className='flex pb-10 space-x-3'>
             <SocialIcon
               url='https://www.linkedin.com/in/diego-martin-mancini/'
-              img='images/linkedin-icon.svg'
+              img='portfolio-frontend/assets/images/linkedin-icon.svg'
             />
             <SocialIcon
               url='https://www.linkedin.com/in/diego-martin-mancini/'
-              img='images/linkedin-icon.svg'
+              img='portfolio-frontend/assets/images/linkedin-icon.svg'
             />
           </div>
         </div>

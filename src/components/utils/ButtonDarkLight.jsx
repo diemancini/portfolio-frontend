@@ -6,7 +6,9 @@ function ButtonDarkLight() {
   function handleDarkMode() {
     // @TODO  : It must add a localstorage for this, using hooks.
     setIsDark(!isDark);
+    console.log(document.documentElement.classList);
     if (document.documentElement.classList.contains("dark")) {
+      console.log(isDark);
       document.documentElement.classList.remove("dark");
     } else {
       document.documentElement.classList.add("dark");
