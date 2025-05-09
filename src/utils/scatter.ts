@@ -1,4 +1,5 @@
 
+import IScatter from "../types/global"
 class Scatter implements IScatter {
   scatterData: IScatterData[];
   tangencyPortfolio: IScatterData;

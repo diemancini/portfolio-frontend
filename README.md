@@ -1,6 +1,7 @@
 ## Deploying a React App to GitHub Pages (gh-pages branch)
 
-Here's a complete guide to deploying your React application to GitHub Pages using the gh-pages branch:
+The official guide of how to deploy this application is [here](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
+On this section, you can find a complete guide to deploying your React application to GitHub Pages using the gh-pages branch:
 
 ### 1. Initial Setup
 
@@ -133,6 +134,144 @@ For custom domains:
 - Add a CNAME file to your public/ folder
 - Configure DNS with your domain provider
 - Add the domain in GitHub Pages settings
+
+## Run the project locally as production-like (github)
+
+To run your React project locally in a production-like environment (similar to how it will run when deployed to GitHub Pages using gh-pages), follow these steps:
+
+1. First, install gh-pages (if not already installed)
+   bash
+   npm install gh-pages --save-dev
+2. Update your package.json
+   Add these configurations:
+
+React built-in
+
+```
+"homepage": "https://<your-github-username>.github.io/<your-repo-name>",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "serve": "serve -s build -l 4000"
+}
+```
+
+### OR
+
+[Vite](https://vite.dev/guide/static-deploy.html#github-pages)
+
+```
+"homepage": "https://diemancini.github.io/portfolio-frontend",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "serve": "serve -s dist -l 4000"
+},
+```
+
+Replace <your-github-username> and <your-repo-name> with your GitHub details.
+
+The serve script will help you test the production build locally.
+
+3. Install serve (a lightweight production server)
+   bash
+
+```
+npm install serve --save-dev
+```
+
+4. Build your React app for production
+   bash
+
+```
+ npm run build
+```
+
+This creates an optimized build/ folder.
+
+5. Run the production build locally
+   bash
+
+```
+ npm run serve
+```
+
+This starts a local server (default: http://localhost:4000).
+
+It mimics how GitHub Pages will serve your app.
+
+6. (Optional) Deploy to GitHub Pages
+   If you want to deploy:
+
+bash
+
+```
+npm run deploy
+```
+
+This pushes the build/ folder to the gh-pages branch.
+
+Key Notes:
+✅ Routing Issues?
+If you use React Router, ensure you have a 404.html in public/ that redirects to index.html.
+Example (public/404.html):
+
+html
+bash
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    sessionStorage.redirect = location.pathname;
+  </script>
+  <meta http-equiv="refresh" content="0;URL='/'">
+</head>
+</html>
+```
+
+✅ Testing HashRouter?
+If you use HashRouter (common for GitHub Pages), test locally by modifying your index.js:
+
+bash
+
+```
+import { HashRouter } from 'react-router-dom';
+
+ReactDOM.render(
+<HashRouter>
+<App />
+</HashRouter>,
+document.getElementById('root')
+);
+```
+
+✅ Forces HTTPS?
+GitHub Pages uses HTTPS. Test locally with:
+
+bash
+
+```
+serve -s build --ssl
+```
+
+(Requires HTTPS certificates.)
+
+Summary
+npm run build → Creates production build
+
+npm run serve → Tests locally like GitHub Pages
+
+npm run deploy → Pushes to gh-pages branch
+
+**************\*\***************\***************\*\***************8
 
 # Getting Started with Create React App
 
