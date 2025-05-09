@@ -9,11 +9,7 @@ function Hero() {
         text-gray-900 md:flex-row md:px-0'
       >
         {/* Image  */}
-        <img
-          className=''
-          src='portfolio-frontend/assets/images/programming.jpg'
-          alt=''
-        />
+        <img className='' src='assets/images/programming.jpg' alt='' />
 
         {/* Tet Container */}
         <div
@@ -53,7 +49,7 @@ function Hero() {
               <div className='flex items-center md:mr-10'>
                 <SocialIcon
                   url='https://www.linkedin.com/in/diego-martin-mancini/'
-                  img='portfolio-frontend/assets/images/linkedin-icon.svg'
+                  img='/assets/images/linkedin-icon.svg'
                 />
               </div>
             </div>
